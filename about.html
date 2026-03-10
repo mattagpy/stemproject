@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>STEM Capstone Portfolio | About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="about">
+  <div class="progress" aria-hidden="true">
+    <div class="progress__bar" id="progressBar"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <div class="brand__logo">JMA</div>
+        <div class="brand__text">
+          <div class="brand__name">John Matthew Agapay</div>
+          <div class="brand__tag">About Me</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" data-link="home" href="index.html">Home</a>
+        <a class="nav__link" data-link="about" href="about.html">About</a>
+        <a class="nav__link" data-link="project" href="project.html">Project</a>
+        <a class="nav__link" data-link="gallery" href="gallery.html">Gallery</a>
+        <a class="nav__link" data-link="contact" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section reveal">
+      <h1 class="section__title">About Me</h1>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h2 class="card__title">Bio</h2>
+          <p class="small">
+            I am a student interested in technology, engineering, and solving real-world problems
+            through hands-on projects. For my STEM Capstone, I created a Smart Garden System that
+            automates plant care using a soil moisture sensor, water pump, and grow lights.
+          </p>
+          <p class="small">
+            This project helped me improve my skills in coding, building, wiring, problem-solving,
+            and design. It also helped me understand how technology can support sustainability and
+            plant growth in a practical way.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="card__title">Photo</h2>
+          <div class="ph ph--hero">
+            <img src="images/profile.jpg" alt="Profile photo"
+              onerror="this.remove(); this.parentElement.querySelector('.ph__empty').style.display='grid';">
+            <div class="ph__empty">Add <b>images/profile.jpg</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid grid--3">
+        <div class="card reveal">
+          <h3 class="card__title">Skills</h3>
+          <div class="tags">
+            <span class="tag">Problem-Solving</span>
+            <span class="tag">Engineering Design</span>
+            <span class="tag">Research</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Coding</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card__title">Tools</h3>
+          <div class="tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">Water Pump</span>
+            <span class="tag">LED Grow Light</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card__title">Goals</h3>
+          <p class="small">
+            My goal is to keep improving my skills in engineering, coding, and design while creating
+            projects that solve real problems and support sustainability.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">© <span id="year"></span> John Matthew Agapay</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
