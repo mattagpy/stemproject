@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>STEM Capstone Portfolio | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <div class="progress" aria-hidden="true">
+    <div class="progress__bar" id="progressBar"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <div class="brand__logo">JMA</div>
+        <div class="brand__text">
+          <div class="brand__name">John Matthew Agapay</div>
+          <div class="brand__tag">STEM Capstone Portfolio</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" data-link="home" href="index.html">Home</a>
+        <a class="nav__link" data-link="about" href="about.html">About</a>
+        <a class="nav__link" data-link="project" href="project.html">Project</a>
+        <a class="nav__link" data-link="gallery" href="gallery.html">Gallery</a>
+        <a class="nav__link" data-link="contact" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero reveal">
+      <h1 class="hero__title">My Smart Garden System <span class="accent">Portfolio.</span></h1>
+      <p class="hero__subtitle">
+        This portfolio shows my STEM Capstone project, including the problem, research,
+        design process, testing, results, and reflection.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="grid grid--2">
+        <div class="card reveal">
+          <h2 class="card__title">Project Overview</h2>
+          <p class="small">
+            My STEM Capstone project is a Smart Garden System made to help automate plant care.
+            The system uses a soil moisture sensor to detect when the soil is dry, then turns on
+            a water pump to water the plant when needed. It also includes grow lights to support plant growth.
+          </p>
+          <p class="small">
+            This project connects technology, engineering, and sustainability by showing how automation
+            can make gardening more efficient and reliable.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">Smart Garden</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">Sustainability</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h2 class="card__title">Project Photo</h2>
+          <div class="ph ph--hero">
+            <img src="images/project-main.jpg" alt="Smart Garden System"
+              onerror="this.remove(); this.parentElement.querySelector('.ph__empty').style.display='grid';">
+            <div class="ph__empty">Add <b>images/project-main.jpg</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid grid--3">
+        <div class="card reveal">
+          <h3 class="card__title">Problem</h3>
+          <p class="small">
+            Many people forget to water plants or do not know how much water plants need.
+            This can lead to unhealthy plants or overwatering.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card__title">Solution</h3>
+          <p class="small">
+            My Smart Garden System helps solve this problem by automatically checking soil moisture
+            and watering the plant only when the soil becomes too dry.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card__title">Goal</h3>
+          <p class="small">
+            My goal was to design and build a working system that supports plant care, saves time,
+            and shows how technology can be used in real-life situations.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">© <span id="year"></span> John Matthew Agapay</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
